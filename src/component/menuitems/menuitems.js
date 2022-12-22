@@ -22,17 +22,17 @@ export const MenuItems=[
         cName:"nav-links",
         icon:"fa-solid fa-address-book",
     },
-    {
-        title:"Sign Up",
-        url:"/signup",
-        cName:"nav-links",
-        icon:"fa-solid fa-user-plus",
+    // {
+    //     title:"Sign Up",
+    //     url:"/signup",
+    //     cName:"nav-links",
+    //     icon:"fa-solid fa-user-plus",
         
-    },
-    {
-        title:"Sign In",
-        url:"/signin",
-        cName:"nav-links",
-        icon:"fa-solid fa-right-to-bracket",
-    }
+    // },
+    // {
+    //     // title:"Login",
+    //     // url:"/signin",
+    //     // cName:"nav-links",
+    //     // icon:"fa-solid fa-right-to-bracket",
+    // }
 ]
