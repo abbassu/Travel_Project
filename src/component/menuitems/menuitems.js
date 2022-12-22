@@ -15,17 +15,24 @@ export const MenuItems=[
         title:"Service",
         url:"/service",
         cName:"nav-links",
-        icon:"fa-solid fa-briefcase"
+        icon:"fa-solid fa-briefcase",
     },    {
         title:"Contact",
         url:"/contact",
         cName:"nav-links",
-        icon:"fa-solid fa-address-book"
+        icon:"fa-solid fa-address-book",
     },
     {
         title:"Sign Up",
         url:"/signup",
         cName:"nav-links",
-        icon:"fa-solid fa-address-"
+        icon:"fa-solid fa-user-plus",
+        
+    },
+    {
+        title:"Sign In",
+        url:"/signin",
+        cName:"nav-links",
+        icon:"fa-solid fa-right-to-bracket",
     }
 ]

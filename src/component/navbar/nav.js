@@ -22,7 +22,7 @@ function Navbar(){
                         
                         <li>
                             <i className={elements.icon}></i>
-                            {/* <Link to={elements.url}>elements.title</Link> */}
+                            <Link to={elements.url}>{elements.title}</Link>
                         </li>
                         </div>
 
