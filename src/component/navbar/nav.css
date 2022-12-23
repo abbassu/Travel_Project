@@ -40,12 +40,12 @@
 
 }
 .nav-link{
-    /* margin-left: 10px; */
     padding: 0 5px;
-    display: flex;
-    justify-content: center;
-
-    background-color: rgb(168, 201, 228);
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    grid-gap:2px;
+    /* background-color: rgb(168, 201, 228); */
 }
 .nav-link:hover ,.item:hover {
     background-color:#01959a ;
@@ -97,6 +97,8 @@ button:hover{
         z-index: -1;
         
     }
+    
+
     .nav-link{
         display: block;
         width: 100%;

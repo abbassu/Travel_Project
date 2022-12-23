@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 import "./home.css"
 function Home(){
     return(
-        <div>
-            <img src= "./images/12.jpg"  alt="car in desert" />
-            <div className="hero-text">
+        <div className="home">
+            <div className="home-text">
                 <h1>Your Journey Your Story</h1>
                 <p>Choose Your Favourite Destination.</p>
-                <Link to="/"> Travel Plan </Link>
+                <Link to="/" className="button_in"> Travel Plan </Link>
             </div>
         </div>
     )

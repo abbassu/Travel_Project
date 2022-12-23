@@ -19,16 +19,20 @@ function Navbar(){
                 <i className={ clicked ? "fa-solid fa-xmark":"fa-solid fa-bars"  }></i>
             </div>
             <ul className={ clicked ? "nav-menu active" :  "nav-menu"}>
-                {MenuItems.map((elements,index)=>{
-                    return(
-                        <div key={index} className="nav-link">
-                            <li>
+                
+                    {MenuItems.map((elements,index)=>{
+                        return(
+                            <div key={index} className="nav-link">
                                 <i className={elements.icon}></i>
-                                <Link to={elements.url} className="item">{elements.title}</Link>
-                            </li>
-                        </div>
-                    )
-                })}
+                                <li>
+                                    
+                                    <Link to={elements.url} className="item">{elements.title}</Link>
+                                </li>
+                            </div>
+                        )
+                    })}
+
+
                 <button>Login</button>
             </ul>
         </div>

@@ -4,10 +4,10 @@ import Navbar from "../navbar/nav";
 function Layout(){
 
     return(
-        <Fragment>
+        <div >
             <Navbar/>
             <Outlet/>
-        </Fragment>
+        </div>
     )
 }
 export default Layout
