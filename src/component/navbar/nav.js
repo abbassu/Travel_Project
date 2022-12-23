@@ -17,11 +17,8 @@ function Navbar(){
             <h1 className="nav-logo">Trip</h1>
             <div className="menu-icon" onClick={clicked_handel}>
                 <i className={ clicked ? "fa-solid fa-xmark":"fa-solid fa-bars"  }></i>
-                {/* <i className="fa-solid fa-bars"></i>
-                <i className="fa-solid fa-xmark"></i> */}
-
             </div>
-            <ul className="nav-menu">
+            <ul className={ clicked ? "nav-menu active" :  "nav-menu"}>
                 {MenuItems.map((elements,index)=>{
                     return(
                         <div key={index} className="nav-link">

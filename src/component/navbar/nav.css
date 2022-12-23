@@ -1,14 +1,23 @@
 .nav{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
+    justify-content: space-between;
     padding: 0 30px;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.25);
+    background-color: white;
     width: 95%;
     height: 80px;
     border-radius: 13px;
-    margin: 25px auto 10px;    
     z-index: 99;
+    position: fixed;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+
 }
 .nav-logo{
     color: #222;
@@ -20,7 +29,7 @@
     grid-template-columns: repeat(6,auto);
     grid-gap:13px;
     list-style: none;
-    align-items: center;
+    align-items:center;
 }
 .item{
     margin-left:5px;
@@ -33,7 +42,10 @@
 .nav-link{
     /* margin-left: 10px; */
     padding: 0 5px;
-    background-color: yellow;
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(168, 201, 228);
 }
 .nav-link:hover ,.item:hover {
     background-color:#01959a ;
@@ -49,32 +61,41 @@ button {
     font-weight: 600;
     border: none;
     cursor: pointer;
-    transition: 0.3s ease-in-out ;
+    transition: 0.1s ease-in-out ;
 }
 button:hover{
     background-color: #151516;
     color: #fff;
 }
-
+.menu-icon{
+    display: none;
+}
 @media screen and (max-width : 850px) {
-    .nav{
-        /* z-index: 99; */
+    .menu-icon{
+        display: block;
+        font-size: 1.3rem;
     }
     .nav-menu{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        background-color: rgb(198, 150, 150);
+        background-color: rgb(225, 198, 91);
         width: 100%;
         height: auto;
         position: absolute;
         top: 0;
-        left: 0;
+        left: -105%;
         opacity: 1;
         align-items: stretch;
         padding: 150px 20px 30px 20px ;
         margin: 0;
+        transition: 0.3s ease-in-out;
+        border-radius: 13px;
+    }
+    .nav-menu.active{
+        left: 0;
         z-index: -1;
+        
     }
     .nav-link{
         display: block;
@@ -88,16 +109,17 @@ button:hover{
         transition: none;
     }
     button{
-
-        /* padding: 0.5rem 1rem ; */
-        padding: 2rem 0;
+        padding: 2rem ;
         white-space: nowrap;
-        margin: 0 3rem;
+        margin: 20px auto 0px;
+        width: 70%;
         border-radius: 0rem;
         font-size: 1.2rem;
         font-weight: 600;
         border: none;
         cursor: pointer;
         transition: 0.3s ease-in-out ;
+        background-color: #01959a;
     }
+    
 }
